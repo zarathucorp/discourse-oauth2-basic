@@ -306,7 +306,7 @@ class ::OAuth2BasicAuthenticator < Auth::ManagedAuthenticator
   end
 end
 
-auth_provider icon: 'naver-icon', title_setting: "oauth2_button_title", authenticator: OAuth2BasicAuthenticator.new
+auth_provider icon: 'fab-n', title_setting: "oauth2_button_title", authenticator: OAuth2BasicAuthenticator.new
 
 load File.expand_path(
        "../lib/validators/oauth2_basic/oauth2_fetch_user_details_validator.rb",
