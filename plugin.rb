@@ -7,6 +7,7 @@
 # url: https://github.com/discourse/discourse-oauth2-basic
 # transpile_js: true
 
+register_svg_icon "fab-n"
 enabled_site_setting :oauth2_enabled
 
 class ::OmniAuth::Strategies::Oauth2Basic < ::OmniAuth::Strategies::OAuth2
