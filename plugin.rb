@@ -7,7 +7,7 @@
 # url: https://github.com/discourse/discourse-oauth2-basic
 # transpile_js: true
 
-register_svg_icon "fab-linkedin"
+register_svg_icon "naver-icon"
 enabled_site_setting :oauth2_enabled
 
 class ::OmniAuth::Strategies::Oauth2Basic < ::OmniAuth::Strategies::OAuth2
@@ -307,7 +307,7 @@ class ::OAuth2BasicAuthenticator < Auth::ManagedAuthenticator
   end
 end
 
-auth_provider title_setting: "oauth2_button_title", authenticator: OAuth2BasicAuthenticator.new, icon: "fab-linkedin"
+auth_provider title_setting: "oauth2_button_title", authenticator: OAuth2BasicAuthenticator.new, icon: "naver-icon"
 
 load File.expand_path(
        "../lib/validators/oauth2_basic/oauth2_fetch_user_details_validator.rb",
